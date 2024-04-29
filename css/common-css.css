@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a:first-child {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    color: red;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.active::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px; 
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.active {
+    position: relative;
+
+}
+
+@keyframes slideInOption {
+    from {
+        width: 0;
+    }
+    to {
+        width: 3px;
+    }
+}
+
+.option::before {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 20px; 
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease; 
+}
+
+.option:hover::before {
+    width: 3px; 
+    animation: slideInOption 0.3s forwards; 
+}
+
+.option {
+    position: relative;
+}

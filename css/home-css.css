@@ -1,0 +1,70 @@
+.first {
+    background-image: url(../img/background-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.classes {
+    background-image: url(../img/background-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: space-between; 
+    background-color: red;
+}
+
+.class-container {
+    width: calc(33.33% - 4%); 
+    margin: 2%; 
+    color: white;
+}
+
+.bjj,.mma,.kickboxing {
+    width: 100%;
+}
+
+  
+  .timetable {
+
+    background-color: #1C1C1C;
+    border: 1px solid #101010;
+    border-collapse: collapse;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    flex: 1;
+    border: 1px solid #101010;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .header {
+    background-color: #101010;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .mma-class {
+    background-color: #808080;
+  }
+  
+  .open-training {
+    background-color: #008000;
+  }
+  
+  .kickboxing {
+    background-color: #FF4500;
+  }
+  
+  .bjj-class {
+    background-color: #0000FF;
+  }
