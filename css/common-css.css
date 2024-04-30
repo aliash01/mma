@@ -68,24 +68,31 @@ a:active {
     }
 }
 
+
+.option {
+    position: relative;
+    padding-left: 10px;
+}
+
 .option::before {
     content: '';
     display: block;
     width: 0; 
-    height: 20px; 
+    height: 20px;
     background-color: red;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 0.3s ease; 
+    transition: width 0.3s ease; 
 }
 
-.option:hover::before {
+.option:hover::before,
+.option.active::before { 
     width: 3px; 
-    animation: slideInOption 0.3s forwards; 
 }
 
-.option {
-    position: relative;
+.option.active::before {
+    background-color: red; 
 }
+

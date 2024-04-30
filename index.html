@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./css/home-css.css">
 </head>
 <body>
-    <div class="first">
+    <div class="first scroll-section" id="home">
     <header>
         <a href="#"><img src="img/yaksha.png" class="logo"></a>
         <nav>
             <ul>
-                <a href="#" class="active"><li>Home</li></a>
-                <a href="#" class="option"><li>Classes</li></a>
-                <a href="#" class="option"><li>Timetable</li></a>
+                <a href="#home" class="option active"><li>Home</li></a>
+                <a href="#classes" class="option"><li>Classes</li></a>
+                <a href="#timetable" class="option"><li>Timetable</li></a>
                 <a href="#" class="option"><li>Socials</li></a>
             </ul>
         </nav>
     </header>
     </div>
-    <div class="classes">
+    <div class="classes scroll-section" id="classes">
         <div class="class-container">
             <img src="img/kickboxing.jpg" class="kickboxing">
             <h1>Kickboxing</h1>
@@ -38,7 +38,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
-    <div class="timetable-container">
+    <div class="timetable-container scroll-section" id="timetable">
     <div class="timetable">
         <div class="row header">
           <div class="cell">Time</div>
@@ -48,7 +48,6 @@
           <div class="cell">Thursday</div>
           <div class="cell">Friday</div>
         </div>
-        <!-- Hourly rows -->
         <div class="row">
           <div class="cell">2-3pm</div>
           <div class="cell mma-class">MMA</div>
@@ -117,7 +116,7 @@
     </div>
           
 
-    
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .first {
     background-image: url(../img/background-1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 110%;
     min-height: 100vh;
+    animation: zoomIn 2s ease-in-out forwards; 
+}
+
+@keyframes zoomIn {
+    from {
+        background-size: 110%; 
+    }
+    to {
+        background-size: 100%;
+    }
 }
 
 .classes {
@@ -68,3 +83,5 @@
   .bjj-class {
     background-color: #0000FF;
   }
+
+
