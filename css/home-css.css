@@ -150,13 +150,10 @@ html, body {
   box-shadow: 0 20px 30px 0 rgba(192, 142, 238, 0.3);
   transform: scale(1.05);
 }
-.timetable .weekend {
-  color: white;
-}
 .timetable .week-names {
   grid-area: week;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -186,7 +183,7 @@ html, body {
   grid-area: content;
   display: grid;
   grid-template-rows: repeat(8, 1fr);
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .timetable .content > div {
   box-shadow: inset 1px 0 0 #ECEFF1, inset 0 1px 0 0 #ECEFF1;
@@ -199,12 +196,39 @@ html, body {
 }
 
 .timetable-container {
-  max-height: 400px; /* Adjust the height as needed */
+  max-height: 500px; /* Adjust the height as needed */
   overflow: auto; /* Enable scrolling */
+  margin-bottom: 10px;
 }
 
 .tt-text {
   color: white;
+}
+
+/* Width */
+.timetable-container::-webkit-scrollbar {
+  width: 10px; /* Adjust width as needed */
+}
+
+/* Track */
+.timetable-container::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+/* Handle */
+.timetable-container::-webkit-scrollbar-thumb {
+  background: #999; /* Grey color for scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.timetable-container::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darker grey color for handle on hover */
+}
+
+/* Handle when pressed */
+.timetable-container::-webkit-scrollbar-thumb:active {
+  background: red; /* Red color when handle is pressed */
 }
 
 /*# sourceMappingURL=home-css.css.map */
