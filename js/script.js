@@ -57,5 +57,4 @@ function handleScroll() {
 }
 
 
-// Listen for scroll events
 document.addEventListener('scroll', handleScroll);

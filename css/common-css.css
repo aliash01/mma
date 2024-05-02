@@ -3,38 +3,84 @@
     padding: 0;
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 10px;
-    align-items: center;
-}
-
 header {
     display: flex;
     justify-content: center;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
 nav {
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0 0 10% 10%;
-    position: fixed;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav li {
-    margin: 10px;
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
 }
 
-nav a:first-child {
-    margin-left: 10px;
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-nav a:last-child {
-    margin-right: 20px;
+nav a:hover {
+  color: #b9b9b9;
 }
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: red;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
 
 a {
     text-decoration: none;
@@ -123,15 +169,5 @@ d
 footer {
     background-color: #1c1c1c;
     width: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row;
 }
 
-.left-footer {
-    margin: 8px;
-}
-
-.right-footer {
-    
-}
