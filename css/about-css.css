@@ -1,0 +1,42 @@
+.first {
+    background-image: url(../img/yaksha-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    background-color: black;
+  }
+
+  .coach {
+    background-color: #101010;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .coach .overlay {
+    position: absolute;
+    background-image: url(../img/grainy.png);
+    width: 50%; 
+    height: 75%;
+    top: 12.5%;
+    right: 10%;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-left: 5px solid red;
+  }
+
+  .coach .overlay .coach-text {
+    color: white;
+    padding: 10px;
+  }
+
+  .coach img {
+    margin-left: 12.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 30%;
+  }

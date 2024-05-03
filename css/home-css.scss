@@ -8,22 +8,12 @@ html {
 }
 
 .first {
-    background-image: url(../img/background-1.png);
+    background-image: url(../img/yaksha-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 25%;
+    background-position: center;
     min-height: 100vh;
-    animation: zoomIn 1.5s ease-in-out forwards; 
     background-color: black;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1);
-    }
 }
 
 
@@ -178,43 +168,3 @@ html, body{
   color: white;
 }
 
-/* Width */
-.timetable-container::-webkit-scrollbar {
-  width: 10px; /* Adjust width as needed */
-}
-
-/* Track */
-.timetable-container::-webkit-scrollbar-track {
-  background: transparent; /* Transparent track */
-}
-
-/* Handle */
-.timetable-container::-webkit-scrollbar-thumb {
-  background: #999; /* Grey color for scrollbar handle */
-  border-radius: 5px; /* Rounded corners for the handle */
-}
-
-/* Handle on hover */
-.timetable-container::-webkit-scrollbar-thumb:hover {
-  background: #888; /* Darker grey color for handle on hover */
-}
-
-/* Handle when pressed */
-.timetable-container::-webkit-scrollbar-thumb:active {
-  background: red; /* Red color when handle is pressed */
-}
-
-/* Width */
-.timetable-container {
-  scrollbar-width: thin; /* Adjust width as needed */
-}
-
-/* Track */
-.timetable-container {
-  scrollbar-color: transparent #999; /* Transparent track with grey color for scrollbar */
-}
-
-/* Handle when pressed */
-.timetable-container:hover {
-  scrollbar-color: transparent red; /* Transparent track with red color when handle is pressed */
-}
