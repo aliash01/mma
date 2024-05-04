@@ -52,9 +52,8 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  .bjj {
-    margin-right: 0; /* Reset margin for small screens */
-    margin-bottom: 20px; /* Space between image and text on small screens */
+  .first {
+    min-height: 50vh;
   }
 }
 html, body {

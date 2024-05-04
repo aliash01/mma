@@ -7,36 +7,49 @@
     background-color: black;
   }
 
-  .coach {
-    background-color: #101010;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-  }
+  .profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center; /* Center text */
+}
 
-  .coach .overlay {
-    position: absolute;
-    background-image: url(../img/grainy.png);
-    width: 50%; 
-    height: 75%;
-    top: 12.5%;
-    right: 10%;
-    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    border-left: 5px solid red;
-  }
+.profile-image {
+    margin-right: 20px;
+}
 
-  .coach .overlay .coach-text {
-    color: white;
-    padding: 10px;
-  }
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 
-  .coach img {
-    margin-left: 12.5%;
-    margin-top: 10px;
+.profile-info {
+    margin-left: 20px; /* Add space between image and text */
+}
+
+.profile-info h2 {
+    font-size: 24px;
     margin-bottom: 10px;
-    display: block;
-    position: relative;
-    z-index: 0;
-    width: 30%;
-  }
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .profile-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .profile-image {
+        margin-right: 0;
+    }
+    .profile-info h2 {
+      margin-top: 20px;
+    }
+}
