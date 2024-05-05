@@ -32,11 +32,6 @@ header::after {
   clear: both;
 }
 
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
 nav {
   float: right;
 }
@@ -175,3 +170,34 @@ footer {
     width: 100%;
 }
 
+.lang-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.lang-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.lang-button:hover {
+    background-color: #333;
+}
+
+.sm-img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
